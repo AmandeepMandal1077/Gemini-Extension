@@ -34,14 +34,21 @@ A lightweight Chrome extension that integrates Google's Gemini AI for text proce
 ## Project Structure
 
 gemini-extension/
+
 ├── manifest.json # Extension configuration
+
 ├── popup.html # Popup UI
+
 ├── popup.js # Popup logic
+
 ├── content.js # Content script
+
 ├── options.html # Settings page
+
 ├── options.js # Settings logic
+
 ├── styles.css # Styles
+
 └── icons/ # Extension icons
-├── icon16.png
-├── icon48.png
+
 └── icon128.png
