@@ -31,6 +31,11 @@ A lightweight Chrome extension that integrates Google's Gemini AI for text proce
     - Click the extension icon and open Options
     - Paste your API key and save
 
+## How to use it
+
+    - Copy any text (<1000 words)
+    - Right click and select "Search with Gemini"
+      
 ## Project Structure
 
 gemini-extension/
