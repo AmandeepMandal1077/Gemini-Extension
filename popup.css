@@ -1,0 +1,137 @@
+.gemini-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 350px;
+    max-height: 500px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.gemini-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eaeaea;
+    color: black;
+}
+
+.gemini-popup-title {
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+
+.gemini-popup-close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #666;
+    padding: 0 5px;
+}
+
+.gemini-popup-close:hover {
+    color: #333;
+}
+
+.gemini-popup-content {
+    padding: 16px;
+    overflow-y: auto;
+    flex-grow: 1;
+    max-height: 400px;
+    color: black;
+}
+
+.gemini-popup-form {
+    margin-bottom: 15px;
+}
+
+.gemini-popup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.gemini-popup-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.gemini-popup-form button {
+    padding: 8px 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gemini-popup-form button:hover {
+    background-color: #3367d6;
+}
+
+.gemini-popup-result {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    overflow-wrap: break-word;
+}
+
+/* Loading spinner styles */
+.gemini-loader {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 15px auto;
+}
+
+.gemini-loader:after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 3px solid #4285f4;
+    border-color: #4285f4 transparent #4285f4 transparent;
+    animation: gemini-loader-spin 1.2s linear infinite;
+}
+
+@keyframes gemini-loader-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gemini-loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.gemini-loader-text {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
