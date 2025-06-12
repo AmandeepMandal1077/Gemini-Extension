@@ -2,6 +2,8 @@
 
 A lightweight Chrome extension that integrates Google's Gemini AI for text processing and content generation directly in your browser.
 
+![Demo gif](demo.gif)
+
 ## Features
 
 -   AI-powered text enhancement and analysis
